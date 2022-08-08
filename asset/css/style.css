@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    --black: #222831;
+    --soft-black: #393E46;
+    --blue: #00ADB5;
+    --blue-1: #02858b;
+    --white: #EEEEEE;
+    --grey: rgb(123, 123, 123);
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+#content{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.toggle-button{
+    display: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    border: none;
+}
+
+.btn{
+    padding: .5em 1em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    color: white;
+    background-color: var(--blue);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--blue-1);
+}
+
+.btn-primary:active{
+    outline: 1px solid var(--blue);
+}
+
+.btn-dark{
+    background-color: var(--soft-black);
+    color: white;
+    border: none;
+}
+
+.btn-dark:hover{
+    background-color: var(--black);
+}
+
+.btn-dark:active{
+    outline: 1px solid var(--black);
+}
+
+.btn-secondary{
+    background-color: var(--grey);
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover{
+    background-color: var(--soft-black);
+}
+
+.btn-secondary:active{
+    outline: 1px solid var(--soft-black);
+}
+
+.rounded{
+    border-radius: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: 600;
+}
+
+.container{
+    padding: 2em;
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.text-normal{
+    font-weight: normal;
+}
+
+.text-muted{
+    color: var(--grey);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+img:hover{
+    box-shadow: 1px 1px 10px 3px rgba(130, 130, 130, 0.6);
+    transition: .3s;
+}
+
+/* .app{
+    max-width: 100vw;
+} */
+
+
+/* header */
+
+header{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+}
+
+header, .navbar-menu-item a{
+    color: white;
+}
+
+.navbar-menu-item{
+    display: inline-block;
+    margin-right: 1.2em;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 1em 0;
+    border-radius: 6px;
+    margin-top: .6em;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown a{
+    color: var(--black);
+    display: block;
+}
+
+.dropdown-item{
+    text-indent: 1.5em;
+    padding: .3em 0;
+}
+
+.dropdown li{
+    list-style-type: none;
+}
+
+.dropdown-item:hover{
+    background-color: var(--grey);
+    color: white;
+    font-weight: normal;
+}
+
+.opacity-full{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+/* section home */
+
+.section-home{
+    display: flex;
+}
+
+.flex-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8em;
+    gap: 0.8em;
+}
+
+.flex-image img{
+    max-width: 40%;
+}
+
+.section-home-title, .section-home-images{
+    flex-basis: 50%;
+}
+
+.home-images-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section-home-title h1{
+    font-size: 2em;
+}
+
+.section-home-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: .8em;
+}
+
+.section-home div:nth-child(2) p{
+    margin-bottom: 1em;
+}
+
+/* features */
+.feature-title{
+    font-size: 2em;
+    padding-left: .5em;
+    color: var(--blue);
+    font-weight: normal;
+}
+
+.feature-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    flex-basis: 50%;
+}
+
+.feature-item h2{
+    color: var(--soft-black);
+    font-weight: normal;
+}
+
+.section-features-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+}
+.section-features-right{
+    flex-basis: 60%;
+}
+
+.section-features-left img{
+    width: 100%;
+}
+
+.learn-more{
+    margin-top: 1em;
+}
+
+/* products */
+.section-products-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+}
+
+.search-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input input{
+    padding: .7em 1.2em;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid var(--grey);
+}
+
+.search-input input:focus{
+    outline: 1px solid var(--blue);
+    box-shadow: 1px 1px 10px -3px var(--blue);
+}
+
+.search-input button{
+    margin-left: .8em;
+}
+
+.search-input button:active{
+    margin-left: .8em;
+    outline: 1px solid var(--blue);
+    box-shadow: 1px 1px 10px -2px var(--blue);
+}
+
+.card-row{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.card{
+    flex-basis: 350px;
+    box-shadow: 1px 1px 10px -3px rgb(148, 148, 148);
+}
+
+.card:hover{
+    box-shadow: 1px 1px 10px 1px rgb(148, 148, 148);
+    transition: .3s;
+}
+
+.card img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.card img:hover{
+    box-shadow: none;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em;
+}
+
+.card-action-btn{
+    display: flex;
+    gap: .5em;
+}
+.card-action-btn button{
+    flex-basis: 50%;
+}
+
+.rating{
+    color: rgb(254, 181, 36);
+}
+
+/* about us */
+.section-aboutus{
+    display: flex;
+    gap: 3em;
+}
+
+.section-aboutus-img{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-aboutus-img img{
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-aboutus-img img:hover{
+    box-shadow: none;
+}
+
+.aboutus-left,
+.aboutus-right{
+    flex-basis: 50%;
+}
+
+.aboutus-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutus-right h2{
+    color: var(--blue);
+    font-weight: normal;
+}
+
+.section-aboutus .about-item ul{
+    padding-left: 2em;
+}
+
+.skills-list{
+    display: flex;
+}
+
+.projects ul li a:hover{
+    color: var(--blue);
+}
+
+.about-item{
+    padding: .7em 1em;
+    border-radius: 16px;
+    margin-bottom: .5em;
+}
+
+.about-item:hover{
+    background-color: white;
+    box-shadow: 1px 1px 10px -3px rgba(180, 180, 180, 0.6);
+    transition: .3s;
+}
+
+.find-me{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.find-me li{
+    margin-right: .5em;
+}
+
+.find-me li a{
+    display: flex;
+    gap: .3em;
+    align-items: center;
+}
+
+.find-me a i{
+    color: var(--black);
+    font-size: 1.5em;
+}
+
+.find-me ul{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.find-me button{
+    flex-basis: 40%;
+}
+.find-me ul{
+    flex-basis: 60%;
+}
+
+/* footer */
+.footer{
+    background-color: var(--black);
+    width: 100%;
+    padding: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8em;
+    font-size: 1.2rem;
+}
+
+.footer h3{
+    font-weight: normal;
+}
+
+.footer p{
+    font-size: .8rem;
+}
+
+.footer .social-media{
+    display: flex;
+    gap: 1.3em;
+}
+
+/* media queries */
+@media screen and (max-width: 992px){
+
+        .container{
+            padding: 1em;
+        }
+
+        /* section home */
+        .section-home{
+            flex-direction: column-reverse;
+        }
+
+        /* section features */
+        .section-features{
+            flex-direction: column;
+        }
+
+        .feature-row{
+            flex-direction: column;
+        }
+
+        .feature-item{
+            border-bottom: 1px solid var(--soft-black);
+            padding-bottom: 2em;
+        }
+
+        /* section products */
+        .card{
+            flex-basis: 40%;
+        }
+
+        /* section about us */
+        .section-aboutus {
+            border-top: 1px solid var(--blue);
+        }
+        
+        .section-aboutus{
+            flex-direction: column;
+        }
+
+        .aboutus-right h2{
+            text-align: center;
+        }
+
+        .aboutus-right{
+            border-bottom: 1px solid var(--blue);
+            padding-bottom: 1em;
+        }
+
+        .section-aboutus{
+            gap: 1em;
+        }
+
+}
+
+@media screen and (max-width: 657px) {
+
+    .container{
+        padding: .5em;
+    }
+
+    .dropdown{
+        position: static;
+        background-color: black;
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        border: none;
+        border-top: 1px solid white;
+        display: none;
+        border-radius: 0;
+    }
+
+    .dropdown a{
+        color: white;
+        display: block;
+    }
+
+    .dropdown-item:hover{
+        background-color: white;
+        color: var(--black);
+        font-weight: normal;
+    }
+
+    .opacity-full{
+        visibility: visible;
+        display: block;
+        opacity: 1;
+        transition: .3s;
+    }
+
+    /* header */
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .navbar-menu{
+        margin-top: .8em;
+    }
+
+    .navbar-menu-item{
+        display: block;
+        margin-bottom: .5em;
+        padding: 0 .5em;
+    }
+
+    .navbar-menu-item:hover{
+        background-color: black;
+    }
+
+    .toggle-button{
+        display: block;
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    /* section products */
+    .card{
+        flex-basis: 100%;
+    }
+
+    /* section about us */
+    .find-me button, .find-me ul{
+        width: 100%;
+    }
+    .find-me ul{
+        margin-top: 1em;
+    }
+    .find-me{
+        flex-direction: column;
+    }
+
+    .section-aboutus-img{
+        padding-top: 0;
+    }
+
+    .find-me ul{
+        height: 0;
+    }
+
+    .skills-list{
+        display: flex;
+        flex-direction: column;
+    }
+}

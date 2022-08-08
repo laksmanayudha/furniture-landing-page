@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18740318f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Get Your Furniture</title>
+</head>
+<body>
+
+    <div class="app">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <div>GetFurniture</div>
+                <button class="toggle-button rounded" id="menuButton">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav>
+                <ul class="navbar-menu toggle" id="menuList">
+                    <li class="navbar-menu-item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="navbar-menu-item">
+                        <a href="#" id="categoriesButton">Categories <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="#" class="dropdown-item">Kursi</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Meja</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Vas Bunga</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Lemari</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Lainnya</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-menu-item">
+                        <a href="#features">Features</a>
+                    </li>
+                    <li class="navbar-menu-item">
+                        <a href="#products">Products</a>
+                    </li>
+                    <li class="navbar-menu-item">
+                        <a href="#aboutUs">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div id="content">
+                <section id="home">
+                    <div class="section-home container">
+                        <div class="section-home-title">
+                            <div>
+                                <h1>Buying and Selling Good and Trusted Quality Furniture</h1>
+                                <p>GetFurniture is a website for buying and selling furniture with good quality and reliable at affordable prices. Furnitures has been selected before being traded, thus guaranteeing the quality and safety of your furniture!</p>
+                            </div>
+                            <div>
+                                <p>Start now and explore more!</p>
+                                <a href="" class="btn btn-primary">Get started</a>
+                            </div>
+                        </div>
+                        <div class="section-home-images">
+                            <div class="home-images-container">
+                                <div class="flex-image">
+                                    <img class="rounded" src="asset/images/home-image.jpg" alt="">
+                                    <img class="rounded" src="asset/images/feature-image.jpg" alt="">
+                                </div>
+                                <div class="flex-image">
+                                    <img class="rounded" src="asset/images/feature-image.jpg" alt="">
+                                    <img class="rounded" src="asset/images/home-image.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="features">
+                    <div class="d-flex section-features container">
+                        <div class="section-features-left container">
+                            <img class="rounded" src="asset/images/feature-image.jpg" alt="">
+                        </div>
+                        <div class="section-features-right container">
+                            <h1 class="feature-title">What are our features?</h1>
+                            <div class="feature-row">
+                                <article class="feature-item">
+                                    <div>
+                                        <h2>Selling Furniture</h2>
+                                        <p>Selling goods is now easier, just follow the instructions on this website and reach consumers at large.</p>
+                                    </div>
+                                    <div class="learn-more">
+                                        <a href="" class="btn btn-dark">learn more</a>
+                                    </div>
+                                </article>
+                                <article class="feature-item">
+                                    <div>
+                                        <h2>Buy Furniture</h2>
+                                        <p>Buying goods is now very easy, just one click is done.</p>
+                                    </div>
+                                    <div class="learn-more">
+                                        <a href="" class="btn btn-dark">learn more</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="feature-row">
+                                <article class="feature-item">
+                                    <div>
+                                        <h2>Furniture Search</h2>
+                                        <p>Find the furniture you want with our search engine.</p>
+                                    </div>
+                                    <div class="learn-more">
+                                        <a href="" class="btn btn-dark">learn more</a>
+                                    </div>
+                                </article>
+                                <article class="feature-item">
+                                    <div>
+                                        <h2>User Testimonials</h2>
+                                        <p>See testimonials that can increase your trust in us.</p>
+                                    </div>
+                                    <div class="learn-more">
+                                        <a href="" class="btn btn-dark">learn more</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="products">
+                    <div class="section-products container">
+                        <div class="section-products-title">
+                            <h1 class="text-blue text-normal">Our Best Products</h1>
+                            <p class="text-muted">Get products with the best quality and price from us</p>
+                            <div class="search-input">
+                                <form class="d-flex search-input" id="searchForm">
+                                    <input class="rounded" type="text" placeholder="Search" id="searchInput">
+                                    <button class="rounded btn btn-primary" type="submit" id="searchButton">Find</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="section-products-card">
+                            <div class="d-flex card-row" id="cardContainer">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="aboutUs">
+                    <div class="section-aboutus container">
+                        <div class="section-aboutus-img rounded aboutus-left">
+                            <img class="rounded" src="asset/images/profile.png" alt="">
+                        </div>
+                        <aside class="aboutus-right">
+                            <h2>About Us</h2>
+                            <div class="bio about-item">
+                                <h3>I Gede Laksmana Yudha</h3>
+                                <p class="text-muted">Full-Stack Web Developer and Tech Enthusiast</p>
+                            </div>
+                            <div class="education about-item">
+                                <h3>Bachelor's Degree in informatics</h3>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p class="text-muted d-inline-block">
+                                    Udayana University, Bali
+                                </p>
+                            </div>
+                            <div class="projects about-item">
+                                <h3>What projects have I ever made?</h3>
+                                <ul>
+                                    <li>
+                                        <a href="https://gitlab.com/laksmanayudha1/laravel-vue-crowdfunding-website-batch-36/-/tree/main/crowdfunding-website" target="_blank" class="text-muted">Crowfunding Website Using Laravel and Vuejs</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://golden-lolly-39bfaf.netlify.app/" target="_blank" class="text-muted">Job Vacancy Website Using React JS</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/NewbeeTryToCode/TanyaAja.com" target="_blank" class="text-muted">TanyaAja.com Using Native PHP</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/iRise-Team/damage_severity_classifier" target="_blank" class="text-muted">Damage Severity Classifier Using Tensorflow</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/laksmanayudha/task-5-fullstack" target="_blank" class="text-muted">Create API using Laravel</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/laksmanayudha/social-media-node.js" target="_blank" class="text-muted">Instagram Clone Website Using NodeJS (Express.js)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="experience about-item">
+                                <h3>Any experience I have had</h3>
+                                <ul>
+                                    <li><span class="text-muted">Project-Based Intern : Fullstack Developer Virtual Internship Program | Investree</span></li>
+                                    <li><span class="text-muted">Bangkit Machine Learning Specialization 2021</span></li>                                    
+                                </ul>
+                            </div>
+                            <div class="skills about-item">
+                                <h3>What I have learned so far ?</h3>
+                                <div class="skills-list">
+                                    <ul>
+                                        <li><span class="text-muted">PHP</span></li>
+                                        <li><span class="text-muted">Javascript</span></li>
+                                        <li><span class="text-muted">HTML</span></li>
+                                        <li><span class="text-muted">CSS</span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span class="text-muted">React JS</span></li>
+                                        <li><span class="text-muted">Laravel</span></li>
+                                        <li><span class="text-muted">Git</span></li>
+                                        <li><span class="text-muted">Tailwind CSS</span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span class="text-muted">Bootstrap</span></li>
+                                        <li><span class="text-muted">MySQL</span></li>
+                                        <li><span class="text-muted">NodeJS</span></li>
+                                        <li><span class="text-muted">Python</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="find-me">
+                                <button class="btn btn-primary" id="findMeButton">Find me on</button>
+                                <ul>
+                                    <li class="d-inline-block">
+                                        <a href="https://github.com/laksmanayudha" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                            <span class="text-blue">laksmanayudha</span>
+                                        </a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="https://www.linkedin.com/in/laksmana-yudha-2b61801b9/" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                            <span class="text-blue">Laksmana Yudha</span>
+                                        </a>   
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <h3>GetFurniture</h3>
+                <p class="text-muted text-center">If you have any questions please visit our social media for more information</p>
+                <div class="social-media">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-gitlab"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-google-plus"></i>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <script src="asset/js/script.js" ></script>
+</body>
+</html>
