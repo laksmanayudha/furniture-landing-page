@@ -1,2 +1,2 @@
 # furniture-landing-page
-Membangun landing page dengan HTML, CSS, dan Vanilla JavaScript
+Build a Furniture landing page with HTML, CSS, and vanilla JavaScript. The app is deployed here: https://adorable-brigadeiros-1777d5.netlify.app/. And source code is here: https://github.com/laksmanayudha/furniture-landing-page
